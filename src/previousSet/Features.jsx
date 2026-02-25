@@ -1,0 +1,172 @@
+import heroImage from '../Images/Hero-Image.png';
+import istImg from '../Images/ist-img.svg';
+import secondImg from '../Images/second-img.svg';
+import thirdImg from '../Images/3rd-img.svg';
+import forthImg from '../Images/4th-img.svg';
+import fifthImg from '../Images/5th-img.svg';
+import discriptLogo from '../Images/descript-logo.svg';
+import FeatureCard from './featureCard.jsx';
+import leftImg from '../Images/left-img.svg';
+import middleImg from '../Images/middle-img.svg';
+import rightImg from '../Images/right-img.svg';
+import HeroSection from './heroSection.jsx';
+export default function Features() {
+	return (
+		<div className='p-4 flex-col text-white mt-8 gap-3 flex justify-center items-center'>
+			<button className='feature-btn  h-6 px-6 w-fit rounded-2xl texts cursor-pointer flex items-center hover:scale-105'>
+				New Version available, Download Now!
+			</button>
+			<div className='main-text p-2.5 flex flex-col items-center  font-semibold text-white leading-tight justify-around text-7xl'>
+				<div>Elevate Your Business</div>
+				<div>with WebInvolve Cloud</div>
+			</div>
+			<div className='secondary-text flex flex-col items-center text-[rgb(49,54,76)] text-2xl font-normal'>
+				<div>
+					Empowering Your Success With Cutting-Edge SaaS Technology
+				</div>
+				<div>Build For Scalability, Efficiency And Growth </div>
+			</div>
+			<button className='secondary-btn rounded-2xl mt-5 py-3 px-6 w-fit bg-blue-500 texts cursor-pointer flex items-center hover:scale-105'>
+				Get Started For Free
+			</button>
+			<HeroSection />
+
+			<div className='description mt-2'>
+				<section class='relative bg-[#05071A] py-24 px-10 overflow-hidden'>
+					<div class='max-w-7xl mx-auto flex gap-16 items-start'>
+						<div class='w-1/3 space-y-6'>
+							<h2 class='text-5xl font-semibold text-white leading-tight'>
+								We Help <br />
+								Transforms Your <br />
+								Business
+							</h2>
+
+							<p class='text-gray-400 text-lg leading-relaxed'>
+								Our mission is to empower individuals and
+								organizations to unleash their creative potential.
+							</p>
+						</div>
+
+						<div class='flex gap-12 w-2/3'>
+							<div
+								class='flex-1 rounded-3xl p-12 
+        bg-[#0B1228]/80 
+        border border-white/5 
+        shadow-[0_0_70px_rgba(59,130,246,0.15)]
+        backdrop-blur-xl
+        flex flex-col items-center text-center'>
+								<div class='w-20 h-20 rounded-full bg-[#1A2342] mb-8 flex items-center justify-center'>
+									<img src={discriptLogo} alt='' />
+								</div>
+
+								<h3 class='text-3xl font-medium text-white mb-6'>
+									Streamlined Workflow
+								</h3>
+
+								<p class='text-gray-400 leading-relaxed'>
+									Effortlessly Collaborate Across Teams and Projects
+									with WebInvolve Cloud's Seamless and Intuitive
+									Collaboration Tools
+								</p>
+							</div>
+
+							<div
+								class='flex-1 rounded-3xl p-12 
+        bg-[#0B1228]/80 
+        border border-white/5 
+        shadow-[0_0_70px_rgba(59,130,246,0.15)]
+        backdrop-blur-xl
+        flex flex-col items-center text-center'>
+								<div class='w-20 h-20 rounded-full bg-[#1A2342] mb-8 flex items-center justify-center'>
+									<img src={discriptLogo} alt='' />
+								</div>
+
+								<h3 class='text-3xl font-medium text-white mb-6'>
+									Robust Data Security
+								</h3>
+
+								<p class='text-gray-400 leading-relaxed'>
+									Protect Your Sensitive Information with Cutting-Edge
+									Encryption and Security Measures solutions
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div className='connection-section flex flex-col p-12 gap-8 justify-center items-center '>
+				<h3 className='font-semibold text-white leading-7 text-5xl'>
+					Get Connected Fast
+				</h3>
+				<span className='whitespace-normal flex flex-col items-center text-[rgb(98,105,138)]'>
+					<p className=''>
+						Explore Our Inspirational Journey, Values, and Commitment
+						to Providing Exceptional
+					</p>
+					<p>SaaS Solutions That Empower Your Business</p>
+				</span>
+
+				<div className='cards flex w-full justify-between gap-8 p-16'>
+					<FeatureCard
+						title='Seamless Integration'
+						description="WebInvolve Cloud's Flexible Integration Options for Enhanced Efficiency."
+						stat='200%'
+						statLabel='Faster Integration'>
+						<div class='relative flex items-center gap-28 py-8'>
+							<div class='absolute top-1/2 left-0 w-full h-0.75 bg-slate-500 -translate-y-1/2'></div>
+
+							<div class='bg-blue-500 p-6 rounded-2xl z-10 flex items-center justify-center'>
+								<img src={leftImg} class='w-16 h-16 object-contain' />
+							</div>
+
+							<div class='bg-white p-6 rounded-2xl z-10 flex items-center justify-center'>
+								<img
+									src={middleImg}
+									class='w-16 h-16 object-contain'
+								/>
+							</div>
+
+							<div class='bg-white p-6 rounded-2xl z-10 flex items-center justify-center'>
+								<img
+									src={rightImg}
+									class='w-16 h-16 object-contain'
+								/>
+							</div>
+						</div>
+						<div className='pt-6 text-2xl'>
+							Our mission is to empower individuals and organizations
+							to unleash their.
+						</div>
+					</FeatureCard>
+
+					<FeatureCard
+						title='Scalable Infrastructure'
+						description="WebInvolve Cloud's Scalable Infrastructure Can Handle Your Increasing Demands and Workloads."
+						stat='120k+'
+						statLabel='Happy customers worldwide'
+						variant='highlight'>
+						<div className='space-y-4'>
+							<div className='bg-[#111A33] p-4 rounded-xl'>
+								<div className='font-semibold'>
+									Scalable User Experiences
+								</div>
+								<div className='text-gray-400 text-sm'>
+									Unique Needs and Preferences
+								</div>
+							</div>
+
+							<div className='bg-[#111A33] p-4 rounded-xl'>
+								<div className='font-semibold'>
+									24/7 Customer Support
+								</div>
+								<div className='text-gray-400 text-sm'>
+									Dedicated Support Ready to Assist
+								</div>
+							</div>
+						</div>
+					</FeatureCard>
+				</div>
+			</div>
+		</div>
+	);
+}
